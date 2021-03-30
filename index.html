@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="#" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <title>FORM</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="logo-container">
+        <img src="" alt="Image" />
+      </div>
+      <div class="panel-container">
+        <div class="panel">
+          <h1 class="panel_heading">Create an Account</h1>
+          <p class="panel_subheading">
+            Already have an account?f <a href="#">Sign in</a>
+          </p>
+          <form action="" onsubmit="alert('Success')">
+            <div class="input">
+              <label for="Email address">Email Address</label>
+              <input type="email" required id="email_address" />
+              <div class="input__indicator"></div>
+            </div>
+            <div class="name">
+              <div class="input">
+                <label for="first-name">First Name</label>
+                <input type="text" required id="first-name" />
+                <div class="input__indicator"></div>
+              </div>
+              <div class="input">
+                <label for="last-name">Last Name</label>
+                <input type="text" required id="last-name" />
+                <div class="input__indicator"></div>
+              </div>
+            </div>
+            <div class="password">
+              <div class="input">
+                <label for="password">Password</label>
+                <input type="password" required id="password" />
+                <div class="input__indicator"></div>
+              </div>
+              <div class="input">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" required id="confirm_password" />
+                <div class="input__indicator"></div>
+              </div>
+            </div>
+            <div id="date-of-birth">
+              <h6 class="date-of-birth_heading">Date of birth</h6>
+              <div class="date-of-birth">
+                <div class="dropdown">
+                  <label for="month">Month</label>
+                  <select name="month" id="month">
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                  </select>
+                </div>
+                <div class="input">
+                  <label for="day">Day</label>
+                  <input type="number" required id="day" min="1" max="31" />
+                  <div class="input__indicator"></div>
+                </div>
+                <div class="input">
+                  <label for="year">Year</label>
+                  <input
+                    type="number"
+                    required
+                    id="year"
+                    min="1990"
+                    max="2010"
+                  />
+                  <div class="input__indicator"></div>
+                </div>
+              </div>
+            </div>
+            <p class="consents">
+              By clicking Create Account, I agree that I have read the
+              <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+            </p>
+            <button type="submit">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--<script>
+      function changeBackground(){
+        var images =
+        document.body.style.backgroundImage = "url(img/b"
+
+      }
+    </script> -->
+  </body>
+</html>
